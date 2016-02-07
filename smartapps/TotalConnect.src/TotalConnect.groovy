@@ -42,9 +42,12 @@ preferences {
     		input("password", "password", title: "Password", description: "Your Password for TotalConnect")
     		input("applicationId", "text", title: "Application ID - It is '14588' currently", description: "Application ID")
     		input("applicationVersion", "text", title: "Application Version", description: "Application Version")
+    		input("locationName", "text", title: "Location  Nmae", description: "Location")
+    		input("locationId", "text", title: "Location ID", description: "Location ID")
+
 			}
     	}
-    page(name: "locationList", title: "Select the Total Connection Location for this App", nextPage: "success", content:"locationList")
+    //page(name: "locationList", title: "Select the Total Connection Location for this App", nextPage: "success", content:"locationList")
     page(name: "success")
 }
 
